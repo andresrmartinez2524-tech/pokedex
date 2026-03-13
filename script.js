@@ -8,7 +8,7 @@ async function pokemones() {
     try {
           mostrar.innerHTML = "";
 
-        for (let index = 1; index < 131; index++) {
+        for (let index = 1; index <20; index++) {
         
         const respuesta = await fetch ("https://pokeapi.co/api/v2/pokemon/"+index);
         const datos = await respuesta.json();
@@ -83,3 +83,4 @@ try {
    pokemones()
 }
 }
+
